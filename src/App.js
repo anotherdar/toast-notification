@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+//redux
+import {useSelector, useDispatch} from 'react-redux'
+import { increment, decrement } from './actions/counterActions'
 
-function App() {
+const App = () => {
+  const Counter = useSelector(({Counter}) => Counter)
+  const isLogged = useSelector(({auth}) => auth)
+  const {counter} = Counter
+  const dispatch = useDispatch()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="container">
+        <h1>Counter: {counter}</h1>
+        <button
+          onClick={()=> dispatch(increment())}
+        >+</button>
+        <button
+          onClick={()=> {
+            if(counter > 0) {
+              dispatch(decrement())
+            } else {
+              alert(`counter is already ${counter}`)
+            }
+          }}
+        >-</button>
+        {
+          isLogged ? <h3>information</h3> : null
+        }
+      </div>
+  )
 }
 
-export default App;
+export default App
