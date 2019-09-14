@@ -1,0 +1,34 @@
+.btn {
+    border: none;
+    padding: .3rem 5rem;
+    margin: 5px;
+    outline: none;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    color: #575757;
+}
+.btn-green {
+    background: var(--green);
+    color: #fff;
+}
+.btn-green:hover {
+    background: var(--soft-green) !important;
+}
+.btn-green:active {
+    transform: translateY(-2px);
+}
+
+.btn-red {
+    background: transparent;
+    border:1px solid var(--red);
+    color: var(--red);
+}
+.btn-red:active {
+    transform: translateY(2px);
+}
+.btn:hover {
+    background: var(--red);
+    color: #fff;
+}
