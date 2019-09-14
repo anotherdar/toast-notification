@@ -11,20 +11,20 @@
     user-select: none;
 }
 .alert__icon {
-    width: 10%;
+    width: 15%;
     height: 100%;
     display: inherit;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     border-radius:  5px 0 0 5px ;
 }
 .alert__icon > i {
     padding: 5px;
-    font-size: 16px;
+    font-size: 22px;
     color: #fff;
 }
 .alert__body {
-    width: 90%;
+    width: 85%;
     height: 100%;
     background: #fff;
     display: inherit;
@@ -45,16 +45,13 @@
 }
 .alert-side {
     box-sizing: border-box;
-    pointer-events: none;
-    padding: 0 30px 0 0;
+    padding-right: 30px;
     position: fixed;
     top: 0;
     right: 0;
     max-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    border: 1px solid red;
-    transition: all .3s ease-in-out;
 }
 .item-enter {
     opacity: 0;
