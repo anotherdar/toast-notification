@@ -1,10 +1,11 @@
 .btn {
     border: none;
-    padding: .3rem 5rem;
+    padding: .6rem 3rem;
     margin: 5px;
     outline: none;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
     border-radius: 3px;
     transition: all .2s ease-in-out;
     color: #575757;
@@ -14,9 +15,9 @@
     color: #fff;
 }
 .btn-green:hover {
-    background: var(--soft-green) !important;
+    background: var(--soft-green) ;
 }
-.btn-green:active {
+.btn:active {
     transform: translateY(-2px);
 }
 
@@ -25,10 +26,27 @@
     border:1px solid var(--red);
     color: var(--red);
 }
-.btn-red:active {
-    transform: translateY(2px);
-}
-.btn:hover {
+.btn-red:hover {
     background: var(--red);
+    color: #fff;
+}
+
+.btn-orange {
+    background: transparent;
+    border:1px solid var(--orange);
+    color: var(--orange);
+
+}
+.btn-orange:hover {
+    background:var(--orange);
+    color: #fff;
+}
+.btn-blue {
+    background: transparent;
+    border:1px solid var(--blue);
+    color: var(--blue);
+}
+.btn-blue:hover {
+    background: var(--blue);
     color: #fff;
 }

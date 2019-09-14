@@ -6,12 +6,12 @@ import Counter from './components/Counter'
 const App = () => {
   return (
     <div className="container">
-        <div className="counter">
-            <Counter />
-        </div>
-        <div className="alert-side">
-          <Alert />
-        </div>
+      <div className="counter">
+        <Counter />
+      </div>
+      <div className="alert-side">
+        <Alert />
+      </div>
     </div>
   )
 }

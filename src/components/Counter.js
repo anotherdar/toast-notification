@@ -1,47 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 //redux
 import { connect } from 'react-redux'
-import {increment, decrement} from '../actions/counterActions'
 import { setAlert } from '../actions/alertAction'
 //componets
 import Button from './Buttons'
 
-const Counter = ({Counter: {counter}, increment, decrement, setAlert}) => {
-    const incrementHandler = () => {increment()}
-    const decrementHandler = () => {
-        if(counter > 0) {
-            decrement()
-        } else {
-            setAlert('warning', 'counter is already 0')
-        }
-    }
-    
+const Counter = ({setAlert}) => {
+    const erroAlert = () => setAlert('error', 'ups something went wrong')
+    const warinigAlert = () => setAlert('warning', 'runnig out of money')       
+    const succesAlert = () => setAlert('check_circle', 'operation complete') 
+    const infoAlert = () => setAlert('info', 'you are awesome')   
     return (
         <div>
-            <h1>Counter {counter}</h1>
+            <h1>Toast notification react js</h1>
 
             <Button 
-                body="-" 
+                body="error" 
                 classType="btn-red" 
-                clicked={decrementHandler}
+                clicked={erroAlert}
             />
             <Button 
-                body="+" 
+                body="warning" 
+                classType="btn-orange"
+                clicked={warinigAlert}
+            />
+            <Button 
+                body="Succes"
                 classType="btn-green"
-                clicked={incrementHandler}
+                clicked={succesAlert}
+            />
+            <Button 
+                body="info"
+                classType="btn-blue"
+                clicked={infoAlert}
             />
         </div>
     )
 }
 Counter.propTypes = {
-    Counter: PropTypes.object.isRequired,
-    increment: PropTypes.func.isRequired,
-    decrement: PropTypes.func.isRequired,
     setAlert: PropTypes.func.isRequired,
 }
-const mapStateToProps = state => ({
-    Counter: state.Counter,    
-})
-export default connect(mapStateToProps, {increment, decrement, setAlert})(Counter)
+
+export default connect(null, {setAlert})(Counter)
