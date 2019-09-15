@@ -10,7 +10,8 @@ const Counter = ({setAlert}) => {
     const erroAlert = () => setAlert('error', 'ups something went wrong')
     const warinigAlert = () => setAlert('warning', 'runnig out of money')       
     const succesAlert = () => setAlert('check_circle', 'operation complete') 
-    const infoAlert = () => setAlert('info', 'you are awesome')   
+    const infoAlert = () => setAlert('info', 'you are awesome')
+       
     return (
         <div>
             <h1>Toast notification react js</h1>

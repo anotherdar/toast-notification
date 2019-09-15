@@ -1,0 +1,10 @@
+.alert-side {
+    box-sizing: border-box;
+    padding-right: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

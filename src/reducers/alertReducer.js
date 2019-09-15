@@ -8,7 +8,6 @@ export default (state = initialState, action) => {
             return [...state, action.payload]
         }  
         case REMOVE_ALERT: {
-            console.log(action.payload)
             return state.filter(alert => alert.id !== action.payload)
         }  
         default: {

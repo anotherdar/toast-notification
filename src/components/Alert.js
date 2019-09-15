@@ -17,9 +17,13 @@ const Alert = ({ alert,removeAlert }) => {
                             </div>
                             <div 
                                 className="alert__body"
-                                onClick={()=> removeAlert(id)}
                             >
                                 {msg}
+                            </div>
+                            <div className="alert__close">
+                                <i className="material-icons"
+                                    onClick={()=> removeAlert(id)}
+                                >close</i>
                             </div>
                         </div>
                     </CSSTransition>

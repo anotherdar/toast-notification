@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Alert from './components/Alert'
 import Counter from './components/Counter'
+import { AlerContainer } from './components/alertContainer'
 
 const App = () => {
   return (
@@ -9,9 +10,9 @@ const App = () => {
       <div className="counter">
         <Counter />
       </div>
-      <div className="alert-side">
+      <AlerContainer>
         <Alert />
-      </div>
+      </AlerContainer>
     </div>
   )
 }
