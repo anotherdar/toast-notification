@@ -15,7 +15,7 @@ this proyect can be build w/ context api.
     yarn add uuid react-transition-group redux-thunk redux react-redux redux-devtools-extension
 ```
 for the icons i'm using material-icons from google
-[I'm an inline-style link] (https://material.io/resources/icons/)
+[https://material.io/resources/icons/]
 
 
 ### how to set the alert 
