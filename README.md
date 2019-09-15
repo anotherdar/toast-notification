@@ -1,13 +1,22 @@
 ## This is a simple project to react toast notifications w/ redux
 
 to use it just wrap the alert with the AlertContainer
-the alert takes two argument and alert type and alert msg
+the alert takes two argument and alert type and alert msg,
+this proyect can be build w/ context api.
 
 ### alert types
 1. error
 2. warning,
 3. check_circle,
 4. info
+
+# Dependencies
+```bash
+    yarn add uuid react-transition-group redux-thunk redux react-redux redux-devtools-extension
+```
+for the icons i'm using material-icons from google
+[I'm an inline-style link] (https://material.io/resources/icons/)
+
 
 ### how to set the alert 
 
@@ -35,16 +44,13 @@ the alert takes two argument and alert type and alert msg
 ```
 
 # scripts 
-
-### yarn start
 ```bash
-yarn start
+    yarn start      
 ```
 to run the developer server
-
-### yarn build 
+#
 ```bash
-yarn build
+    yarn build
 ```
 to make a production build
 
