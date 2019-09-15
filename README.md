@@ -25,14 +25,14 @@ for the icons i'm using material-icons from google
     import PropTypes from 'prop-types'
     import { connect } from 'react-redux'
     import { setAlert } from '../actions/alertAction'
-    import { AlerContainer } from './components/alertContainer'
+    import { AlerTContainer } from './components/alertContainer'
     import Alert from './components/Alert'
 
     const App = ({setAlert}) => {
         const errorAlert = () => setAlert('error', 'ups something went wrong')
 
         return (
-            <AlrtConatiner>
+            <AlerTContainer>
                 <Alert />
             </AlertContainer>
         )

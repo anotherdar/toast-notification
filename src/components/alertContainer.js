@@ -1,7 +1,7 @@
 import React from 'react'
 import './AlertContainer.css'
 
-export const AlerContainer = ({children}) => (
+export const AlerTContainer = ({children}) => (
     <div className="alert-side">
         {children}
     </div>
